@@ -1,0 +1,24 @@
+{
+  "name": "alfred-workflow-github",
+  "version": "0.0.0",
+  "description": "Alfred workflow to search for stuff on GitHub",
+  "main": "index.js",
+  "dependencies": {
+    "alfy": "0.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexilyaev/alfred-workflow-github.git"
+  },
+  "keywords": [],
+  "author": "Alex Ilyaev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexilyaev/alfred-workflow-github/issues"
+  },
+  "homepage": "https://github.com/alexilyaev/alfred-workflow-github#readme"
+}
