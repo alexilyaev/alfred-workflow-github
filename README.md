@@ -19,6 +19,24 @@ Usage
 
 In Alfred, type `git`, <kbd>Enter</kbd>, and your query.
 
+Contributing
+-------------
+
+### Setting up as Alfred Workflow
+
+This will create a symlink between this repo and `~/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows`, thus enabling the workflow in Alfred.  
+Changes to the code will reflect automatically the next time your run the workflow using Alfred.
+
+```
+./node_modules/.bin/alfy-init
+```
+
+### Remove the symlink
+
+```
+./node_modules/.bin/alfy-cleanup
+```
+
 Created by
 -----------
 
