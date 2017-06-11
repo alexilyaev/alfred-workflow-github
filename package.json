@@ -8,6 +8,14 @@
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
+  "dependencies": {
+    "alfy": "0.6.0"
+  },
+  "devDependencies": {
+    "alfy-test": "0.3.0",
+    "ava": "0.19.1",
+    "xo": "0.18.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexilyaev/alfred-workflow-github.git"
@@ -30,13 +38,5 @@
   "author": {
     "name": "Alex Ilyaev"
   },
-  "license": "MIT",
-  "dependencies": {
-    "alfy": "0.6.0"
-  },
-  "devDependencies": {
-    "alfy-test": "0.3.0",
-    "ava": "0.19.1",
-    "xo": "0.18.2"
-  }
+  "license": "MIT"
 }

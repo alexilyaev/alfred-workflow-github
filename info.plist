@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>1A93F41E-8049-45A8-9FEE-32348586A9B8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>467C65C2-9E56-48BE-9D06-CE012E72B610</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8A21B27C-9366-4D45-A1C1-0BB5B72E0FF2</key>
 		<array>
 			<dict>
@@ -35,6 +48,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E0CF40BD-2912-457B-8D58-E4A43668E498</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -42,7 +74,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>get</string>
+				<string>get my</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -52,7 +84,7 @@
 				<key>queuemode</key>
 				<integer>2</integer>
 				<key>runningsubtext</key>
-				<string>Searching...</string>
+				<string>Please wait...</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -78,40 +110,101 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>browser</key>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/set-token.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
 				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-				<key>utf8</key>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>467C65C2-9E56-48BE-9D06-CE012E72B610</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>get token</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/token.js $1 "$2"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string>Search My Github Repos</string>
+				<key>title</key>
+				<string>GitHub Search: My Repos</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>E0CF40BD-2912-457B-8D58-E4A43668E498</string>
+			<string>1A93F41E-8049-45A8-9FEE-32348586A9B8</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>1A93F41E-8049-45A8-9FEE-32348586A9B8</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
+		<key>467C65C2-9E56-48BE-9D06-CE012E72B610</key>
+		<dict>
+			<key>xpos</key>
+			<integer>530</integer>
+			<key>ypos</key>
+			<integer>180</integer>
+		</dict>
 		<key>8A21B27C-9366-4D45-A1C1-0BB5B72E0FF2</key>
 		<dict>
 			<key>xpos</key>
-			<integer>10</integer>
+			<integer>240</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>40</integer>
 		</dict>
 		<key>E0CF40BD-2912-457B-8D58-E4A43668E498</key>
 		<dict>
 			<key>xpos</key>
-			<integer>150</integer>
+			<integer>530</integer>
 			<key>ypos</key>
-			<integer>10</integer>
+			<integer>40</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>

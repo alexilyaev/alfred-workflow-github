@@ -1,15 +1,19 @@
+#!/usr/bin/env node
 'use strict';
 
-/**
- * Token Get1 - scopes: Repo
- * 357791eea4ef4f69c0c7e7b9e3032ec0b1225298
- */
-
-process.env.alfred_debug = '1';
+// process.env.alfred_debug = '1';
 
 const alfy = require('alfy');
 
-const token = '357791eea4ef4f69c0c7e7b9e3032ec0b1225298';
+const command = 'get';
+
+const input = alfy.input;
+
+const token = alfy.config.get('token');
+
+if (!token) {
+  return alfy.error(new Error(`Run "${command} token" with your Personal GitHub Token`));
+}
 
 // alfy.fetch('jsonplaceholder.typicode.com/posts')
 //   .then((data) => {
