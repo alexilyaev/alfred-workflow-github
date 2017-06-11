@@ -86,15 +86,15 @@
 				<key>runningsubtext</key>
 				<string>Please wait...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node index.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/actions/my.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>index.js</string>
+				<string>my.js</string>
 				<key>subtext</key>
-				<string>Search My Github Repos</string>
+				<string></string>
 				<key>title</key>
-				<string>GitHub Search: My Repos</string>
+				<string>Search GitHub for My Repos</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -115,7 +115,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/set-token.js "$1"</string>
+				<string>./node_modules/.bin/run-node src/core/set-token.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -152,15 +152,15 @@
 				<key>runningsubtext</key>
 				<string>Please wait...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/token.js $1 "$2"</string>
+				<string>./node_modules/.bin/run-node src/actions/token.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>index.js</string>
+				<string>token.js</string>
 				<key>subtext</key>
-				<string>Search My Github Repos</string>
+				<string></string>
 				<key>title</key>
-				<string>GitHub Search: My Repos</string>
+				<string>Set GitHub Token</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>

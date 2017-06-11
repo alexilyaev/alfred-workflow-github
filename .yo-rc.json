@@ -1,8 +1,0 @@
-{
-  "generator-alfred": {
-    "promptValues": {
-      "githubUsername": "alexilyaev",
-      "website": "https://github.com/alexilyaev/alfred-workflow-github"
-    }
-  }
-}
