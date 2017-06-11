@@ -5,6 +5,17 @@ alfred-workflow-github
 
 > [Alfred 3](https://www.alfredapp.com/) workflow to search for stuff on GitHub.
 
+This is an experiment, for now
+-------------------------------
+
+I was using another workflow but it was slow and I was wondering if I could create a workflow on my own.  
+So I"ve decided to experiment and found [Alfy](https://github.com/sindresorhus/alfy), then decided
+to try the GitHub v4 API (based on GraphQL), and so this happened.  
+This workflow **is not** faster than the other solutions, I think it's GitHub's API speed, but it's
+written in JavaScript 😀.
+
+For now, check ou the [Existing Solutions](https://github.com/alexilyaev/alfred-workflow-github/wiki/Existing-Solutions)
+
 Install
 --------
 
@@ -18,24 +29,6 @@ Usage
 ------
 
 In Alfred, type `git`, <kbd>Enter</kbd>, and your query.
-
-Contributing
--------------
-
-### Setting up as Alfred Workflow
-
-This will create a symlink between this repo and `~/Library/Application Support/Alfred 3/Alfred.alfredpreferences/workflows`, thus enabling the workflow in Alfred.  
-Changes to the code will reflect automatically the next time your run the workflow using Alfred.
-
-```
-./node_modules/.bin/alfy-init
-```
-
-### Remove the symlink
-
-```
-./node_modules/.bin/alfy-cleanup
-```
 
 Created by
 -----------
