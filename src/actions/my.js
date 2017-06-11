@@ -4,11 +4,10 @@
 // process.env.alfred_debug = '1';
 
 const alfy      = require('alfy');
-const constants = require('../constants');
 
+const command = process.env['WF_COMMAND'];
 const input   = alfy.input;
 const token   = alfy.config.get('token');
-const command = constants.commandKeyword;
 
 if (!token) {
   return alfy.error(new Error(`Run "${command} token" with your Personal GitHub Token`));
