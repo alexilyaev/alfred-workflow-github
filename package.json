@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Alfred workflow to search for stuff on GitHub",
   "scripts": {
-    "test": "xo && ava",
+    "test": "ava",
+    "lint": "xo",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup"
   },
@@ -20,7 +21,7 @@
     "url": "git+https://github.com/alexilyaev/alfred-workflow-github.git"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6.13.0"
   },
   "files": [
     "src",

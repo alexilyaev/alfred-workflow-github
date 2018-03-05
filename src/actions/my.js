@@ -3,7 +3,7 @@
 
 // process.env.alfred_debug = '1';
 
-const alfy      = require('alfy');
+const alfy = require('alfy');
 
 const command = process.env['WF_COMMAND'];
 const input   = alfy.input;
@@ -51,13 +51,14 @@ const query = `{
 
 const variables = {};
 
-alfy.fetch('https://api.github.com/graphql', {
-  'method': 'POST',
-  'headers': {
-    'Authorization': 'bearer ' + token
-  },
-  body: JSON.stringify({ query, variables })
-})
+alfy
+  .fetch('https://api.github.com/graphql', {
+    method: 'POST',
+    headers: {
+      Authorization: 'bearer ' + token
+    },
+    body: JSON.stringify({ query, variables })
+  })
   .then((json) => {
     const data = json.data;
 
@@ -73,7 +74,7 @@ alfy.fetch('https://api.github.com/graphql', {
         title: node.name,
         subtitle: node.description || '',
         arg: node.url
-      }
+      };
     });
 
     alfy.output(results);
