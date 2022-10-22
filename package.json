@@ -2,6 +2,7 @@
   "name": "alfred-workflow-github",
   "version": "0.0.0",
   "description": "Alfred workflow to search for stuff on GitHub",
+  "type": "module",
   "scripts": {
     "test": "ava",
     "lint": "xo",
@@ -9,12 +10,12 @@
     "preuninstall": "alfy-cleanup"
   },
   "dependencies": {
-    "alfy": "0.6.0"
+    "alfy": "1.0.0"
   },
   "devDependencies": {
-    "alfy-test": "0.3.0",
-    "ava": "0.19.1",
-    "xo": "0.18.2"
+    "alfy-test": "0.4.2",
+    "ava": "4.3.3",
+    "xo": "0.52.4"
   },
   "repository": {
     "type": "git",
