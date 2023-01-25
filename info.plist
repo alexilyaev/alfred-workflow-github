@@ -82,7 +82,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>get my</string>
+				<string>ghg</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -94,7 +94,7 @@
 				<key>runningsubtext</key>
 				<string>Please wait...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/actions/my.js "$1"</string>
+				<string>./node_modules/.bin/run-node ./src/actions/my.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -102,9 +102,9 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>GitHub Search: My Repos</string>
+				<string>GitHub Search: My Gists</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -154,7 +154,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>set token</string>
+				<string>ghset</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -166,7 +166,7 @@
 				<key>runningsubtext</key>
 				<string>Please wait...</string>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node src/actions/token.js "$1"</string>
+				<string>./node_modules/.bin/run-node ./src/actions/token.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -176,7 +176,7 @@
 				<key>title</key>
 				<string>Set GitHub Token</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>5</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
