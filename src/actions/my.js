@@ -6,9 +6,12 @@ const command = process.env['WF_COMMAND'];
 const input = alfy.input;
 const token = alfy.config.get('token');
 
+// https://docs.github.com/en/rest/gists/gists#list-gists-for-a-user
+const gistsPerPage = 100;
+
 async function fetchGists() {
   const data = await alfy.fetch(
-    'https://api.github.com/users/alexilyaev/gists',
+    `https://api.github.com/users/alexilyaev/gists?page=1&per_page=${gistsPerPage}`,
     {
       headers: {
         Accept: 'application/vnd.github+json',
@@ -99,6 +102,7 @@ async function init() {
   // }
 
   const items = await fetchGists();
+  // const items = await fetchGitHubRepos();
 
   alfy.output(items);
 }
