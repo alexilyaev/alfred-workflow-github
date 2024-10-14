@@ -4,6 +4,7 @@ import alfy from 'alfy';
 
 const command = process.env['WF_COMMAND'];
 const input = alfy.input;
+// This is only needed for the GitHub GraphQL API, not for public Gists
 const token = alfy.config.get('token');
 
 // https://docs.github.com/en/rest/gists/gists#list-gists-for-a-user
@@ -44,7 +45,7 @@ async function fetchGists() {
 
 async function fetchGitHubRepos() {
   const query = `{
-    viewer { 
+    viewer {
       repositories(first: 10) {
         nodes {
           id

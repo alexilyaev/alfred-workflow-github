@@ -1,13 +1,14 @@
-#!/usr/bin/env node
-'use strict';
+/**
+ * This is just me playing around
+ */
 
-const alfy = require('alfy');
+import alfy from 'alfy';
 
 const input = alfy.input;
 
 alfy.output([
   {
     title: `Set token: ${input}?`,
-    arg: input
-  }
+    arg: input,
+  },
 ]);
